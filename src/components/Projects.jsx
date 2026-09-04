@@ -1,34 +1,18 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ZoomIn, Eye } from 'lucide-react';
+import { ZoomIn } from 'lucide-react';
 
 const projectList = [
   {
     id: 1,
-    title: "H Tek Pro",
-    location: "Bhosari, Pune",
-    category: "h-tek",
-    img: "/assets/projects/h-tek/H-TEK 1.jpg",
-    desc: "Heavy-duty HVAC installation and ventilation commissioning for manufacturing plant."
-  },
-  {
-    id: 2,
-    title: "H Tek Pro (Ducting)",
-    location: "Bhosari, Pune",
-    category: "h-tek",
-    img: "/assets/projects/h-tek/H-TEK 2.jpg",
-    desc: "Large-diameter duct installation and airflow balancing."
-  },
-  {
-    id: 3,
-    title: "Hyundai Motors Showroom",
+    title: "Hyundai Motors Showroom VRF",
     location: "Pune",
     category: "hyundai",
     img: "/assets/projects/hyundai/HYUNDAI 3.jpg",
     desc: "Multi-zone VRF air conditioning and heating system integration."
   },
   {
-    id: 4,
+    id: 2,
     title: "Hyundai Motors Service Center",
     location: "Pune",
     category: "hyundai",
@@ -36,24 +20,40 @@ const projectList = [
     desc: "High-volume air extraction and central ventilation unit installation."
   },
   {
-    id: 5,
-    title: "Kia Motors Showroom",
+    id: 3,
+    title: "Hyundai Showroom Indoor Console",
+    location: "Pune",
+    category: "hyundai",
+    img: "/assets/projects/hyundai/HYUNDAI 1.jpg",
+    desc: "Ceiling-cassette airflow ductwork and architectural diffuser installation."
+  },
+  {
+    id: 4,
+    title: "Kia Motors Showroom VRV",
     location: "Chinchwad, Pune",
     category: "kia",
     img: "/assets/projects/kia/KIA 3.jpg",
     desc: "Luxury console and ceiling-mounted air conditioning installation."
   },
   {
-    id: 6,
-    title: "Kia Motors Service Bay",
+    id: 5,
+    title: "Kia Motors Service Bay Ventilation",
     location: "Chinchwad, Pune",
     category: "kia",
     img: "/assets/projects/kia/KIA 1.jpg",
     desc: "Compressors and heavy ventilation exhaust integration."
   },
   {
+    id: 6,
+    title: "Kia Motors Indoor Duct Grid",
+    location: "Chinchwad, Pune",
+    category: "kia",
+    img: "/assets/projects/kia/KIA 2.jpg",
+    desc: "Precision insulation and acoustic ducting for multi-zone climate control."
+  },
+  {
     id: 7,
-    title: "SBI Life Office - WTC",
+    title: "SBI Life Office - WTC Chiller Plant",
     location: "Kharadi, Pune",
     category: "sbi",
     img: "/assets/projects/sbi/SBI 2.jpg",
@@ -61,11 +61,19 @@ const projectList = [
   },
   {
     id: 8,
-    title: "SBI Life Central Air",
+    title: "SBI Life Central VRV Network",
     location: "World Trade Center, Kharadi",
     category: "sbi",
     img: "/assets/projects/sbi/SBI 3.jpg",
     desc: "Acoustic lined ducting and VRV indoor unit grid."
+  },
+  {
+    id: 9,
+    title: "SBI Life Executive Floor HVAC",
+    location: "WTC Kharadi, Pune",
+    category: "sbi",
+    img: "/assets/projects/sbi/SBI 1.jpg",
+    desc: "Centralized air distribution and concealed ductable AC commissioning."
   }
 ];
 
@@ -75,7 +83,6 @@ export default function Projects() {
 
   const categories = [
     { label: 'All Projects', value: 'all' },
-    { label: 'H Tek Pro', value: 'h-tek' },
     { label: 'Hyundai Motors', value: 'hyundai' },
     { label: 'Kia Motors', value: 'kia' },
     { label: 'SBI Life (WTC)', value: 'sbi' },
@@ -104,7 +111,7 @@ export default function Projects() {
         </span>
         <h2 className="section-title">Showcase of Engineering Precision</h2>
         <p className="section-subtitle">
-          Explore photographs of our professional installations in manufacturing sectors, automobile showrooms, and corporate headquarters.
+          Explore photographs of our professional indoor HVAC unit, ducting, and chiller installations across Pune.
         </p>
 
         {/* Categories Tab bar */}

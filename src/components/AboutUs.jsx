@@ -4,7 +4,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 export default function AboutUs() {
   const highlights = [
-    'Over 20 Years of Proven Industry Experience',
+    '7+ Years of Proven Industry Experience',
     'Certified and Highly Skilled HVAC Engineers',
     'Customized Design & Cost-Effective Commissioning',
     'Strong Presence Across Commercial & Automobile Hubs in Pune',
@@ -52,7 +52,7 @@ export default function AboutUs() {
                 lineHeight: 1.2,
               }}
             >
-              Engineering Comfort, Delivering Precision.
+              Mechanical Comfort, Delivering Precision.
             </h2>
             <p
               style={{
@@ -62,7 +62,7 @@ export default function AboutUs() {
                 lineHeight: 1.6,
               }}
             >
-              AirMatrix Enterprises is a leading provider of comprehensive industrial & commercial HVAC, Air Conditioning, Refrigeration, and Cold Storage Solutions. With over two decades of engineering experience, we design, install, maintain, and repair systems that power critical infrastructures.
+              AirMatrix Enterprises is a leading provider of comprehensive industrial & commercial HVAC, Air Conditioning, Refrigeration, and Cold Storage Solutions. With over 7+ years of dedicated engineering experience, we design, install, maintain, and repair systems that power critical infrastructures.
             </p>
             <p
               style={{
@@ -126,8 +126,8 @@ export default function AboutUs() {
               }}
             >
               <img
-                src="/assets/projects/h-tek/H-TEK 1.jpg"
-                alt="HVAC Installation at H Tek Pro, Bhosari"
+                src="/assets/projects/sbi/SBI 2.jpg"
+                alt="Indoor Chiller & Ducting Installation at WTC, Kharadi"
                 style={{
                   width: '100%',
                   height: '450px',
@@ -151,10 +151,10 @@ export default function AboutUs() {
                 }}
               >
                 <p style={{ fontSize: '0.8rem', color: '#38BDF8', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '4px' }}>
-                  Featured Project Installation
+                  Featured Indoor HVAC System
                 </p>
                 <h4 style={{ fontSize: '1.2rem', color: '#ffffff', fontWeight: 700 }}>
-                  H Tek Pro – Bhosari, Pune
+                  SBI Life Office – WTC Kharadi, Pune
                 </h4>
               </div>
             </div>

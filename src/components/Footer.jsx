@@ -13,21 +13,20 @@ export default function Footer() {
   ];
 
   const services = [
-    { label: 'Air Conditioning Sales', href: '#services' },
-    { label: 'HVAC Solutions', href: '#services' },
-    { label: 'Refrigeration Systems', href: '#services' },
-    { label: 'Cold Storage Engineering', href: '#services' },
-    { label: 'HVAC Duct Design', href: '#services' },
-    { label: 'Installation & Commissioning', href: '#services' },
-    { label: 'Annual Maintenance (AMC)', href: '#services' },
-    { label: 'Repairs & Support', href: '#services' },
+    { label: 'Cassette AC Services', href: '#services' },
+    { label: 'Centralised AC Solution', href: '#services' },
+    { label: 'Chiller System Solution', href: '#services' },
+    { label: 'Cold Storage & Cold Room', href: '#services' },
+    { label: 'Ductable AC Solution', href: '#services' },
+    { label: 'HVAC Contractor Services', href: '#services' },
+    { label: 'VRF / VRV Systems', href: '#services' },
   ];
 
   const projects = [
-    { label: 'H Tek Pro – Bhosari', href: '#projects' },
-    { label: 'Hyundai Motors – Pune', href: '#projects' },
-    { label: 'Kia Motors – Chinchwad', href: '#projects' },
+    { label: 'Hyundai Motors Showroom', href: '#projects' },
+    { label: 'Kia Motors Showroom & Bay', href: '#projects' },
     { label: 'SBI Life – WTC Kharadi', href: '#projects' },
+    { label: 'Bhosari Industrial Zone', href: '#locations' },
   ];
 
   return (
@@ -43,18 +42,26 @@ export default function Footer() {
         >
           {/* Brand Column */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <a href="#home" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
               <img
                 src="/assets/logo.png"
-                alt="AirMatrix Enterprises"
+                alt="AirMatrix Logo Icon"
                 style={{
-                  height: '52px',
+                  height: '42px',
                   objectFit: 'contain',
                 }}
               />
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ffffff', letterSpacing: '1px', lineHeight: 1.1 }}>
+                  AIRMATRIX
+                </span>
+                <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#38BDF8', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+                  ENTERPRISES
+                </span>
+              </div>
             </a>
             <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: '#94a3b8' }}>
-              Luxurious industrial and commercial HVAC, refrigeration, and cold storage engineering. Delivering electrical comfort and excellence across Pune since 2006.
+              Luxurious industrial and commercial HVAC, refrigeration, and cold storage engineering. Delivering mechanical comfort and excellence across Pune with 7+ years of experience.
             </p>
             <div style={{ display: 'flex', gap: '16px' }}>
               <a href="#" aria-label="Facebook" className="social-icon-btn">
@@ -94,7 +101,7 @@ export default function Footer() {
           {/* Services Column */}
           <div>
             <h4 style={{ fontSize: '1.05rem', color: '#ffffff', fontWeight: 700, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-              Our Offerings
+              Primary Solutions
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {services.map((service, idx) => (

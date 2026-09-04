@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
   const cards = [
     {
       icon: <Award size={28} color="#008DDA" />,
-      title: "20+ Years Experience",
+      title: "7+ Years Experience",
       desc: "An established industry track record of high-performance engineering & mechanical cooling systems."
     },
     {
@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
         </span>
         <h2 className="section-title" style={{ color: '#ffffff' }}>Uncompromised Standards in Air Engineering</h2>
         <p className="section-subtitle" style={{ color: '#94A3B8' }}>
-          We blend state-of-the-art technology with decades of technical expertise to deliver maximum thermal stability.
+          We blend state-of-the-art technology with 7+ years of technical expertise to deliver maximum thermal stability.
         </p>
 
         <div

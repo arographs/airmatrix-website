@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Navigation, Landmark } from 'lucide-react';
+import { MapPin, Navigation } from 'lucide-react';
 
 const locations = [
   {
     id: 1,
-    name: "H Tek Pro – Bhosari",
-    type: "Manufacturing & Industrial",
-    image: "/assets/projects/h-tek/H-TEK 3.jpg",
+    name: "Bhosari Industrial Zone",
+    type: "Industrial Facility & Central Air",
+    image: "/assets/projects/hyundai/HYUNDAI 9.jpg",
     coordinates: { x: '25%', y: '25%' },
-    description: "Ventilation and high-capacity exhaust systems inside Bhosari industrial zone."
+    description: "Ventilation duct grids, process cooling, and high-capacity exhaust systems in Bhosari."
   },
   {
     id: 2,
@@ -87,7 +87,7 @@ export default function Locations() {
               Interactive Pune Network Map
             </h3>
             <p style={{ fontSize: '0.85rem', color: '#94A3B8', marginBottom: '24px', textAlign: 'left' }}>
-              Click on glowing markers to preview our operations in the major industrial/commercial zones.
+              Click on glowing markers to preview our operations in major industrial/commercial zones.
             </p>
 
             {/* SVG MAP CONTAINER */}
@@ -101,7 +101,6 @@ export default function Locations() {
                 border: '1px solid rgba(255, 255, 255, 0.05)',
               }}
             >
-              {/* Abstract SVG Grid of Pune Paths */}
               <svg
                 width="100%"
                 height="100%"
@@ -119,7 +118,6 @@ export default function Locations() {
                 </defs>
                 <rect width="100%" height="100%" fill="url(#grid)" />
 
-                {/* Connecting glowing vector lines between locations */}
                 <path
                   d="M 120 87.5 L 96 157.5 L 240 227.5 L 384 175 L 120 87.5"
                   fill="none"
@@ -151,7 +149,6 @@ export default function Locations() {
                       alignItems: 'center',
                     }}
                   >
-                    {/* Glowing outer aura */}
                     <div
                       style={{
                         width: isActive ? '20px' : '14px',
@@ -163,7 +160,6 @@ export default function Locations() {
                         transition: 'all 0.3s ease',
                       }}
                     >
-                      {/* Pulse Ring */}
                       <div
                         style={{
                           position: 'absolute',
@@ -179,7 +175,6 @@ export default function Locations() {
                       />
                     </div>
                     
-                    {/* Floating label */}
                     <span
                       style={{
                         marginTop: '8px',
@@ -207,7 +202,6 @@ export default function Locations() {
               Active Project Features
             </h3>
             
-            {/* Feature Card */}
             <div
               style={{
                 background: 'rgba(30, 62, 98, 0.25)',
@@ -244,7 +238,6 @@ export default function Locations() {
               </div>
             </div>
 
-            {/* List selector of locations */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {locations.map((loc) => {
                 const isActive = activeLoc.id === loc.id;

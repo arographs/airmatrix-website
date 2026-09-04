@@ -40,10 +40,10 @@ export default function Stats() {
   const stats = [
     {
       icon: <Award size={32} color="#008DDA" />,
-      value: "20",
+      value: "7",
       suffix: "+",
       label: "Years Experience",
-      desc: "Delivering engineering excellence since 2006"
+      desc: "Delivering engineering excellence and precision"
     },
     {
       icon: <Briefcase size={32} color="#008DDA" />,

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronRight, Phone } from 'lucide-react';
+import { ArrowRight, ChevronRight } from 'lucide-react';
 
 const heroImages = [
   '/assets/projects/sbi/SBI 2.jpg',
-  '/assets/projects/h-tek/H-TEK 2.jpg',
   '/assets/projects/hyundai/HYUNDAI 3.jpg',
   '/assets/projects/kia/KIA 3.jpg',
+  '/assets/projects/sbi/SBI 1.jpg',
 ];
 
 export default function Hero() {
@@ -80,8 +80,8 @@ export default function Hero() {
       />
 
       {/* Hero Content */}
-      <div className="container" style={{ position: 'relative', zIndex: 3, paddingReady: '20px' }}>
-        <div style={{ maxWidth: '650px', textAlign: 'left' }}>
+      <div className="container" style={{ position: 'relative', zIndex: 3 }}>
+        <div style={{ maxWidth: '680px', textAlign: 'left' }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -90,19 +90,19 @@ export default function Hero() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              padding: '6px 14px',
+              padding: '6px 16px',
               borderRadius: '9999px',
-              background: 'rgba(0, 141, 218, 0.1)',
-              border: '1px solid rgba(0, 141, 218, 0.25)',
+              background: 'rgba(0, 141, 218, 0.15)',
+              border: '1px solid rgba(0, 141, 218, 0.3)',
               color: '#38BDF8',
               fontSize: '0.85rem',
-              fontWeight: 600,
+              fontWeight: 700,
               textTransform: 'uppercase',
               letterSpacing: '1px',
               marginBottom: '20px',
             }}
           >
-            <span>20+ Years of Engineering Excellence</span>
+            <span>7+ Years of Engineering Excellence</span>
           </motion.div>
 
           <motion.h1
@@ -118,7 +118,7 @@ export default function Hero() {
               letterSpacing: '-1px',
             }}
           >
-            Electrical Comfort.
+            Mechanical Comfort.
             <br />
             <span style={{ color: '#008DDA' }}>Delivering Excellence.</span>
           </motion.h1>
@@ -128,14 +128,14 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             style={{
-              fontSize: '1.25rem',
+              fontSize: '1.2rem',
               color: '#cbd5e1',
               marginBottom: '35px',
               fontWeight: 400,
-              lineHeight: 1.5,
+              lineHeight: 1.6,
             }}
           >
-            Premium and specialized HVAC, Refrigeration, Air Conditioning & Cold Storage Solutions for industrial, commercial, and corporate infrastructure.
+            7+ Years of Excellence in HVAC, Refrigeration, Air Conditioning & Cold Storage Solutions for industrial, commercial, and corporate infrastructure.
           </motion.p>
 
           <motion.div
@@ -184,6 +184,7 @@ export default function Hero() {
               cursor: 'pointer',
               transition: 'all 0.3s ease',
             }}
+            aria-label={`Slide ${idx + 1}`}
           />
         ))}
       </div>
